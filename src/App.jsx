@@ -5,7 +5,7 @@ class App extends React.Component {
   state = { posts: []}
 
   async componentDidMount() {
-    const response = await fetch("http://localhost:3000/posts");
+    const response = await fetch('https://frozen-retreat-96403.herokuapp.com/posts');
     const posts = await response.json();
     this.setState({ posts: posts })
   }
@@ -13,8 +13,8 @@ class App extends React.Component {
   render() {
     return this.state.posts.map((post, index) => {
       return (
-        <div>
-          <h1 key={index}>{post.title}</h1>
+        <div key={index}>
+          <h1>{post.title}</h1>
           <p>{post.body}</p>
         <hr/>
         </div>
