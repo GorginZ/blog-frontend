@@ -3,10 +3,8 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
-   <hi>Hello World</hi>
-   </div>
-  )
+   <hi>Helloooo World</hi>
+ )
 } 
 
 export default App;
